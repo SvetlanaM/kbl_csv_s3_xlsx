@@ -9,6 +9,7 @@ import json
 def convert(list_of_indexes, sheet_names):
     list_of_indexes = list_of_indexes
     listOfFiles = glob.glob("/data/in/tables/*.csv")
+    print listOfFiles
     sheet_names = sheet_names
     
     excelFile = xlsxwriter.Workbook('CE_WK' + '.xlsx')
@@ -37,3 +38,5 @@ def convert(list_of_indexes, sheet_names):
                             worksheet.write(index_row, index_col, unicode(data_in_cell))
     print " === conversion is done ==="
     excelFile.close()
+    listOfFiles2 = glob.glob("/data/in/tables/*.xlsx")
+    print listOfFiles2
