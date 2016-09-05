@@ -35,6 +35,8 @@ if __name__ == '__main__':
 
     conn = tinys3.Connection(data["parameters"]["#S3key"],data["parameters"]["#S3secretKey"])
     listOfFiles2 = glob.glob("/data/in/tables/*.xlsx")
+    print listOfFiles2
+    print "error"
     for file in listOfFiles2:
         temp = os.path.splitext(file[16:len(file)])
         print " === uploading " + 'CE_WK'+str(int(time.strftime("%V"))-1)+temp[1] + " ==="
