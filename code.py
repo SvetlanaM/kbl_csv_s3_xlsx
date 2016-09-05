@@ -19,7 +19,7 @@ if __name__ == '__main__':
     list_of_indexes = [[]]
     sheet_names = []
     for fileName in listOfFiles:
-        sheet_names.append(fileName[16:-4])
+        sheet_names.append(fileName[17:-4])
     for index, fileInList in enumerate(listOfFiles):
         with open(fileInList, 'rb') as f:
             content = csv.reader(f)
@@ -38,7 +38,7 @@ if __name__ == '__main__':
     print listOfFiles2
     print "error"
     for file in listOfFiles2:
-        temp = os.path.splitext(file[16:len(file)])
+        temp = os.path.splitext(file[17:len(file)])
         print " === uploading " + 'CE_WK'+str(int(time.strftime("%V"))-1)+temp[1] + " ==="
         conn.upload('CE_WK'+str(int(time.strftime("%V"))-1)+temp[1],open(file,'rb'),data["parameters"]["bucketName"])
         print " === " + 'CE_WK'+str(int(time.strftime("%V"))-1)+temp[1] + " uploaded ==="
