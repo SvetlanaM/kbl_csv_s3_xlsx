@@ -13,7 +13,6 @@ def convert(list_of_indexes, sheet_names):
     sheet_names = sheet_names
     
     excelFile = xlsxwriter.Workbook('CE_WK' + '.xlsx')
-    print excelFile
     for index, fileInList in enumerate(listOfFiles):
         worksheet = excelFile.add_worksheet(str(sheet_names[index]))
         with open(fileInList, 'rb') as f:
