@@ -7,7 +7,7 @@ import time
 import json
 from ctext import convert
 
-with open('/data/config.json') as jsonFile:
+with open('./data/config.json') as jsonFile:
     data = json.load(jsonFile)
 
 if data["parameters"]["#S3key"] == '' or data["parameters"]["#S3secretKey"] == '' or data["parameters"]["bucketName"] == '':
@@ -15,7 +15,7 @@ if data["parameters"]["#S3key"] == '' or data["parameters"]["#S3secretKey"] == '
     sys.exit(1)
 
 if __name__ == '__main__':
-    listOfFiles = glob.glob("/data/in/tables/*.csv")
+    listOfFiles = glob.glob("./data/in/tables/*.csv")
     list_of_indexes = [[]]
     sheet_names = []
     for fileName in listOfFiles:
@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
 
     conn = tinys3.Connection(data["parameters"]["#S3key"],data["parameters"]["#S3secretKey"])
-    listOfFiles2 = glob.glob("/data/in/tables/*.xlsx")
+    listOfFiles2 = glob.glob("./data/in/tables/*.xlsx")
     print listOfFiles2
     print "error"
     for file in listOfFiles2:
