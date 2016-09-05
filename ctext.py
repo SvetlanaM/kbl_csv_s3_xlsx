@@ -12,7 +12,7 @@ def convert(list_of_indexes, sheet_names):
     print listOfFiles
     sheet_names = sheet_names
     
-    excelFile = xlsxwriter.Workbook('CE_WK' + '.xlsx')
+    excelFile = xlsxwriter.Workbook('./data/in/tables/CE_WK' + '.xlsx')
     for index, fileInList in enumerate(listOfFiles):
         worksheet = excelFile.add_worksheet(str(sheet_names[index]))
         with open(fileInList, 'rb') as f:
@@ -38,7 +38,5 @@ def convert(list_of_indexes, sheet_names):
                             worksheet.write(index_row, index_col, unicode(data_in_cell))
     print " === conversion is done ==="
     excelFile.close()
-    listOfFiles2 = glob.glob("./*.xlsx")
-    print listOfFiles2
-    print os.path.realpath('CE_WK.xlsx')
+    
     
