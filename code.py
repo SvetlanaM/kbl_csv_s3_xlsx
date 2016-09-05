@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
 
     conn = tinys3.Connection(data["parameters"]["#S3key"],data["parameters"]["#S3secretKey"])
-    listOfFiles2 = glob.glob("/data/in/tables/*.xlsx")
+    listOfFiles2 = glob.glob("/data/in/tables/CE_WK.xlsx")
     print listOfFiles2
     print "error"
     for file in listOfFiles2:
