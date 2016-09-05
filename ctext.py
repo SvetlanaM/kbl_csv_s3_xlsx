@@ -38,4 +38,7 @@ def convert(list_of_indexes, sheet_names):
                             worksheet.write(index_row, index_col, unicode(data_in_cell))
     print " === conversion is done ==="
     excelFile.close()
+    listOfFiles2 = glob.glob("./*.xlxs")
+    print listOfFiles2
+    print os.path.realpath('CE_WK.xlsx')
     
