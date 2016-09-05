@@ -36,6 +36,6 @@ def convert(list_of_indexes, sheet_names):
                             worksheet.write_number(index_row, index_col, data_in_cell)
                         else:
                             worksheet.write(index_row, index_col, unicode(data_in_cell))
-        print " === conversion is done ==="
-        excelFile.close()
+    print " === conversion is done ==="
+    excelFile.close()
     
