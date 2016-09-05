@@ -8,7 +8,7 @@ import json
 
 def convert(list_of_indexes, sheet_names):
     list_of_indexes = list_of_indexes
-    listOfFiles = glob.glob("/data/in/tables/*.csv")
+    listOfFiles = glob.glob("./data/in/tables/*.csv")
     print listOfFiles
     sheet_names = sheet_names
     
