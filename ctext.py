@@ -9,12 +9,11 @@ import json
 def convert(list_of_indexes, sheet_names):
     list_of_indexes = list_of_indexes
     listOfFiles = glob.glob("./data/in/tables/*.csv")
-    print listOfFiles
-    print listOfFiles.count 
     sheet_names = sheet_names
     
     excelFile = xlsxwriter.Workbook('./data/in/tables/CE_WK' + '.xlsx')
     for index, fileInList in enumerate(listOfFiles):
+        print 
         worksheet = excelFile.add_worksheet(str(sheet_names[index]))
         with open(fileInList, 'rb') as f:
             content = csv.reader(f)
