@@ -62,7 +62,6 @@ class reader:
 
 
         if results3 != None:
-            print (results3.group())
             return time.strftime(results3.group())
             
         try:
