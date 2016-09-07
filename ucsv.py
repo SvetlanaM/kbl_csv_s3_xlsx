@@ -31,27 +31,40 @@ class reader:
         self.reader = csv.reader(f, dialect=dialect, **kwds)
 
     def value(self, s):
-        numberRegex = re.compile(r'^[0]+\d+')
+        numberRegex = re.compile(r'^[0]+\d+$')
         numberFloatRegex = re.compile(r'^\d+E\d+')
+        numberDateRegex = re.compile(r'([0-9]?\d?){2}/\d+')
+
+        try:
+            results3 = numberDateRegex.search(s)
+        except:
+            pass
+
 
         try:
             results  = numberRegex.search(s)
+        except:
+            pass
 
-            try:
 
-                return unicode(results.group(), "utf-8")
-            except:
-                pass
+        try:
+            results2 = numberFloatRegex.search(s)
+        except:
+            pass
 
-            try:
-                results2 = numberFloatRegex.search(s)
-            except:
-                pass
-            try :
-                return unicode(results2.group(), "utf-8")
-            except:
-                pass
+        if results != None:
 
+            return unicode(results.group(), "utf-8")
+
+        if results2 != None:
+            return unicode(results2.group(), "utf-8")
+
+
+        if results3 != None:
+            print (results3.group())
+            return time.strftime(results3.group())
+            
+        try:
             if int(s) == int('inf'):
                 return unicode(s.replace(" ", ""), "utf-8")
             return int(s)
