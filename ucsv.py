@@ -5,6 +5,7 @@ __dropins__ = [ 'reader', 'writer', 'DictReader', 'DictWriter' ]
 
 import codecs
 import re
+import time
 
 class UTF8Recoder:
     '''Iterator that reads a stream encoded in any given encoding.
