@@ -16,6 +16,7 @@ if data["parameters"]["#S3key"] == '' or data["parameters"]["#S3secretKey"] == '
 
 if __name__ == '__main__':
     listOfFiles = glob.glob("./data/in/tables/*.csv")
+    print os.listdir('./data/in/tables/')
     list_of_indexes = [[]]
     sheet_names = []
     for fileName in listOfFiles:
