@@ -6,7 +6,6 @@ __dropins__ = [ 'reader', 'writer', 'DictReader', 'DictWriter' ]
 import codecs
 import re
 import time
-
 class UTF8Recoder:
     '''Iterator that reads a stream encoded in any given encoding.
     The output is reencoded to UTF-8 for internal consistency.
@@ -32,9 +31,10 @@ class reader:
         self.reader = csv.reader(f, dialect=dialect, **kwds)
 
     def value(self, s):
-        numberRegex = re.compile(r'^[0]+\d+$')
-        numberFloatRegex = re.compile(r'^\d+E\d+')
-        numberDateRegex = re.compile(r'([0-9]?\d?){2}/\d+')
+        numberRegex = re.compile(r'^[0]+\d+')
+        numberFloatRegex = re.compile(r'^\d+E\d+$')
+        numberDateRegex = re.compile(r'([0-9]?\d?){2}/\d+$')
+
 
         try:
             results3 = numberDateRegex.search(s)
@@ -53,7 +53,7 @@ class reader:
         except:
             pass
 
-        if results != None:
+        if results != None and results3 == None:
 
             return unicode(results.group(), "utf-8")
 
@@ -62,8 +62,12 @@ class reader:
 
 
         if results3 != None:
+
             return time.strftime(results3.group())
-            
+
+
+
+
         try:
             if int(s) == int('inf'):
                 return unicode(s.replace(" ", ""), "utf-8")
