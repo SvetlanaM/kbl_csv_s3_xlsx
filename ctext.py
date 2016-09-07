@@ -16,10 +16,12 @@ def convert(list_of_indexes, sheet_names):
     hidden.set_hidden()
     for index, fileInList in enumerate(listOfFiles):
         worksheet = excelFile.add_worksheet(str(sheet_names[index]))
+        worksheet.protect()
         with open(fileInList, 'rb') as f:
             content = csv.reader(f)
             for index_row, data_in_row in enumerate(content):
                 for index_col, data_in_cell in enumerate(data_in_row):
+                    
                     if index_col  in list_of_indexes[index]:
                         if type(data_in_cell) == int or type(data_in_cell) == float:
                             temp = '=TEXT(%d,\"*#*,######\")' % (data_in_cell)
