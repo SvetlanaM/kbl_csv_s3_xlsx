@@ -25,7 +25,7 @@ if __name__ == '__main__':
             content = csv.reader(f)
             for index_row, data_in_row in enumerate(content):
                 for index_col, data_in_cell in enumerate(data_in_row):
-                    if type(data_in_cell) == unicode  and index_row != 0:
+                    if type(data_in_cell) == unicode  and index_row != 0 and data_in_cell !="":
                         list_of_indexes[index].append(index_col)
                         list_of_indexes[index] = dict.fromkeys(list_of_indexes[index]).keys()
             list_of_indexes.append([])
