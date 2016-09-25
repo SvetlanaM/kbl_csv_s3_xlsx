@@ -40,3 +40,4 @@ if __name__ == '__main__':
         print " === uploading " + 'CE_WK'+str(int(time.strftime("%V")))+temp[1] + " ==="
         conn.upload('CE_WK'+str(int(time.strftime("%V")))+temp[1],open(file,'rb'),data["parameters"]["bucketName"])
         print " === " + 'CE_WK'+str(int(time.strftime("%V")))+temp[1] + " uploaded ==="
+        print data["parameters"]["fileName"]
