@@ -38,6 +38,7 @@ if __name__ == '__main__':
     for file in listOfFiles2:
         temp = os.path.splitext(file[17:len(file)])
         print " === uploading " + 'CE_WK'+str(int(time.strftime("%V")))+temp[1] + " ==="
+        print listOfFiles2
         if data["parameters"]["fileName"] == "":
             conn.upload('CE_WK'+str(int(time.strftime("%V")))+temp[1],open(file,'rb'),data["parameters"]["bucketName"])
             print " === " + 'CE_WK'+str(int(time.strftime("%V")))+temp[1] + " uploaded ==="
