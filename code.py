@@ -37,12 +37,12 @@ if __name__ == '__main__':
     listOfFiles2 = glob.glob("./data/in/tables/*.xlsx")
     for file in listOfFiles2:
         temp = os.path.splitext(file[17:len(file)])
-        print " === uploading " + 'CE_WK'+str(int(time.strftime("%V")))+temp[1] + " ==="
-        print listOfFiles2
         if data["parameters"]["fileName"] == "":
+            print " === uploading " + 'CE_WK'+str(int(time.strftime("%V")))+temp[1] + " ==="
             conn.upload('CE_WK'+str(int(time.strftime("%V")))+temp[1],open(file,'rb'),data["parameters"]["bucketName"])
             print " === " + 'CE_WK'+str(int(time.strftime("%V")))+temp[1] + " uploaded ==="
         else:
+            print " === " + data["parameters"]["fileName"] + ".xlsx" + " uploaded ==="
             conn.upload(data["parameters"]["fileName"] + ".xlsx",open(file,'rb'),data["parameters"]["bucketName"])
             print " === " + data["parameters"]["fileName"] + ".xlsx" + " uploaded ==="
             
