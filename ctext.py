@@ -12,8 +12,6 @@ def convert(list_of_indexes, sheet_names):
     sheet_names = sheet_names
     
     excelFile = xlsxwriter.Workbook('./data/in/tables/CE_WK' + '.xlsx')
-    hidden = excelFile.add_format()
-    hidden.set_hidden()
     for index, fileInList in enumerate(listOfFiles):
         worksheet = excelFile.add_worksheet(str(sheet_names[index]))
         worksheet.protect()
@@ -25,7 +23,7 @@ def convert(list_of_indexes, sheet_names):
                     if index_col  in list_of_indexes[index]:
                         if type(data_in_cell) == int or type(data_in_cell) == float:
                             temp = '=TEXT(%d,\"*#*,######\")' % (data_in_cell)
-                            worksheet.write_formula(index_row, index_col, temp, hidden)
+                            worksheet.write_formula(index_row, index_col, temp)
                         elif data_in_cell == ' ':
                                 worksheet.write_blank(index_row, index_col, None)
                         elif type(data_in_cell) == unicode:
