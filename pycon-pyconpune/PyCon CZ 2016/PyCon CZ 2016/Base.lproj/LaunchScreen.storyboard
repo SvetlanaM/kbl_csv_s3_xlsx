@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pyconlogo" translatesAutoresizingMaskIntoConstraints="NO" id="z4q-eY-v4y">
+                                <rect key="frame" x="40" y="220" width="295" height="227"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Svetlana Margetová 2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkA-Uv-7kc">
+                                <rect key="frame" x="67.5" y="642.5" width="234" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="YcB-h9-O3R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AkA-Uv-7kc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="20" id="FYp-qk-0W0"/>
+                            <constraint firstItem="z4q-eY-v4y" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="24" id="Igi-3A-LFk"/>
+                            <constraint firstItem="z4q-eY-v4y" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LT7-9W-yPT"/>
+                            <constraint firstItem="z4q-eY-v4y" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="200" id="MxL-9f-aHp"/>
+                            <constraint firstItem="AkA-Uv-7kc" firstAttribute="leading" secondItem="z4q-eY-v4y" secondAttribute="leading" id="gjd-Z6-8gM"/>
+                            <constraint firstItem="AkA-Uv-7kc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-3" id="rWd-Va-hJR"/>
+                            <constraint firstItem="z4q-eY-v4y" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="x7J-1D-Khi"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="AkA-Uv-7kc" secondAttribute="bottom" constant="8" symbolic="YES" id="zLV-r8-ehQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FYp-qk-0W0"/>
+                                <exclude reference="gjd-Z6-8gM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="251" y="369"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pyconlogo" width="1024" height="1024"/>
+    </resources>
+</document>

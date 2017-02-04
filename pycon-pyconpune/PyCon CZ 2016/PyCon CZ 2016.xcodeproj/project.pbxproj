@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA48C6BB097DB79091FEA002 /* Pods_PyCon_CZ_2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2118BAA5C803C3EB9D703238 /* Pods_PyCon_CZ_2016.framework */; };
+		DC14AB3C1DB259AB0067BFC0 /* TalksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14AB3B1DB259AB0067BFC0 /* TalksViewController.swift */; };
+		DC14AB3F1DB26AA00067BFC0 /* TalkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14AB3E1DB26AA00067BFC0 /* TalkCollectionViewCell.swift */; };
+		DC5BA5191DAD001A00A71450 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5BA5181DAD001A00A71450 /* AppDelegate.swift */; };
+		DC5BA51E1DAD001B00A71450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5BA51C1DAD001B00A71450 /* Main.storyboard */; };
+		DC5BA5201DAD001B00A71450 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5BA51F1DAD001B00A71450 /* Assets.xcassets */; };
+		DC5BA5231DAD001B00A71450 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5BA5211DAD001B00A71450 /* LaunchScreen.storyboard */; };
+		DC7DF1A61DB533F80045A483 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7DF1A51DB533F80045A483 /* TwitterViewController.swift */; };
+		DC7DF1B81DB562620045A483 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7DF1B31DB562620045A483 /* Roboto-Light.ttf */; };
+		DC7DF1B91DB562620045A483 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7DF1B41DB562620045A483 /* Roboto-Medium.ttf */; };
+		DC7DF1BB1DB562620045A483 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7DF1B61DB562620045A483 /* Roboto-Thin.ttf */; };
+		DC8AF3FD1DB3CA430093D7D7 /* TalkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8AF3FC1DB3CA430093D7D7 /* TalkDetailViewController.swift */; };
+		DCB8FC491DDA4A56004DB889 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCB8FC481DDA4A56004DB889 /* GoogleService-Info.plist */; };
+		DCF3D2661DB10B7C00BBEA5F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3D2651DB10B7C00BBEA5F /* Model.swift */; };
+		DCF841011DD7341D007AD042 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF841001DD7341D007AD042 /* Talk.swift */; };
+		DCF841031DD73A00007AD042 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF841021DD73A00007AD042 /* Room.swift */; };
+		DCF841051DD740E3007AD042 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF841041DD740E3007AD042 /* Config.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2118BAA5C803C3EB9D703238 /* Pods_PyCon_CZ_2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PyCon_CZ_2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2698DAA9BB4EFA79C3CF3F28 /* Pods-PyCon CZ 2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyCon CZ 2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-PyCon CZ 2016/Pods-PyCon CZ 2016.release.xcconfig"; sourceTree = "<group>"; };
+		3B670946D7BE63FAA24C1381 /* Pods-PyCon CZ 2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyCon CZ 2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PyCon CZ 2016/Pods-PyCon CZ 2016.debug.xcconfig"; sourceTree = "<group>"; };
+		DC14AB3B1DB259AB0067BFC0 /* TalksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TalksViewController.swift; path = Controllers/TalksViewController.swift; sourceTree = "<group>"; };
+		DC14AB3E1DB26AA00067BFC0 /* TalkCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TalkCollectionViewCell.swift; path = "Views and cells/TalkCollectionViewCell.swift"; sourceTree = "<group>"; };
+		DC5BA5151DAD001A00A71450 /* PyCon CZ 2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PyCon CZ 2016.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5BA5181DAD001A00A71450 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC5BA51D1DAD001B00A71450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC5BA51F1DAD001B00A71450 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC5BA5221DAD001B00A71450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC5BA5241DAD001B00A71450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7DF1A51DB533F80045A483 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterViewController.swift; path = Controllers/TwitterViewController.swift; sourceTree = "<group>"; };
+		DC7DF1B31DB562620045A483 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		DC7DF1B41DB562620045A483 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		DC7DF1B61DB562620045A483 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		DC8AF3FC1DB3CA430093D7D7 /* TalkDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TalkDetailViewController.swift; path = Controllers/TalkDetailViewController.swift; sourceTree = "<group>"; };
+		DCB8FC481DDA4A56004DB889 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCF3D2651DB10B7C00BBEA5F /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = Model/Model.swift; sourceTree = "<group>"; };
+		DCF841001DD7341D007AD042 /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Talk.swift; path = Model/Talk.swift; sourceTree = "<group>"; };
+		DCF841021DD73A00007AD042 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Room.swift; path = Model/Room.swift; sourceTree = "<group>"; };
+		DCF841041DD740E3007AD042 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Model/Config.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC5BA5121DAD001A00A71450 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA48C6BB097DB79091FEA002 /* Pods_PyCon_CZ_2016.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3680B47D735C55309432BED7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B670946D7BE63FAA24C1381 /* Pods-PyCon CZ 2016.debug.xcconfig */,
+				2698DAA9BB4EFA79C3CF3F28 /* Pods-PyCon CZ 2016.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC14AB3A1DB2597B0067BFC0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC14AB3B1DB259AB0067BFC0 /* TalksViewController.swift */,
+				DC8AF3FC1DB3CA430093D7D7 /* TalkDetailViewController.swift */,
+				DC7DF1A51DB533F80045A483 /* TwitterViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DC14AB3D1DB26A7E0067BFC0 /* Views and cells */ = {
+			isa = PBXGroup;
+			children = (
+				DC14AB3E1DB26AA00067BFC0 /* TalkCollectionViewCell.swift */,
+			);
+			name = "Views and cells";
+			sourceTree = "<group>";
+		};
+		DC5BA50C1DAD001A00A71450 = {
+			isa = PBXGroup;
+			children = (
+				DC5BA5171DAD001A00A71450 /* PyCon CZ 2016 */,
+				DC5BA5161DAD001A00A71450 /* Products */,
+				3680B47D735C55309432BED7 /* Pods */,
+				FFA7B1A7D6259DFB28D30543 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC5BA5161DAD001A00A71450 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC5BA5151DAD001A00A71450 /* PyCon CZ 2016.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC5BA5171DAD001A00A71450 /* PyCon CZ 2016 */ = {
+			isa = PBXGroup;
+			children = (
+				DC14AB3D1DB26A7E0067BFC0 /* Views and cells */,
+				DC14AB3A1DB2597B0067BFC0 /* Controllers */,
+				DCF3D2641DB10B6300BBEA5F /* Model */,
+				DC5BA5181DAD001A00A71450 /* AppDelegate.swift */,
+				DC5BA51C1DAD001B00A71450 /* Main.storyboard */,
+				DC5BA51F1DAD001B00A71450 /* Assets.xcassets */,
+				DC7DF1A71DB55E820045A483 /* Font */,
+				DC5BA5211DAD001B00A71450 /* LaunchScreen.storyboard */,
+				DCB8FC481DDA4A56004DB889 /* GoogleService-Info.plist */,
+				DC5BA5241DAD001B00A71450 /* Info.plist */,
+			);
+			path = "PyCon CZ 2016";
+			sourceTree = "<group>";
+		};
+		DC7DF1A71DB55E820045A483 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				DC7DF1B31DB562620045A483 /* Roboto-Light.ttf */,
+				DC7DF1B41DB562620045A483 /* Roboto-Medium.ttf */,
+				DC7DF1B61DB562620045A483 /* Roboto-Thin.ttf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		DCF3D2641DB10B6300BBEA5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCF3D2651DB10B7C00BBEA5F /* Model.swift */,
+				DCF841001DD7341D007AD042 /* Talk.swift */,
+				DCF841021DD73A00007AD042 /* Room.swift */,
+				DCF841041DD740E3007AD042 /* Config.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FFA7B1A7D6259DFB28D30543 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2118BAA5C803C3EB9D703238 /* Pods_PyCon_CZ_2016.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC5BA5141DAD001A00A71450 /* PyCon CZ 2016 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5BA5271DAD001B00A71450 /* Build configuration list for PBXNativeTarget "PyCon CZ 2016" */;
+			buildPhases = (
+				8F06346E9224CC3A45F40A75 /* 📦 Check Pods Manifest.lock */,
+				DC5BA5111DAD001A00A71450 /* Sources */,
+				DC5BA5121DAD001A00A71450 /* Frameworks */,
+				DC5BA5131DAD001A00A71450 /* Resources */,
+				6980DD9961738B22F4645D26 /* 📦 Embed Pods Frameworks */,
+				6667FC84B87BDA29AF40096E /* 📦 Copy Pods Resources */,
+				DC7DF1A41DB505A10045A483 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PyCon CZ 2016";
+			productName = "PyCon CZ 2016";
+			productReference = DC5BA5151DAD001A00A71450 /* PyCon CZ 2016.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC5BA50D1DAD001A00A71450 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Svetlana Margetová";
+				TargetAttributes = {
+					DC5BA5141DAD001A00A71450 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D3U95MADM7;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = DC5BA5101DAD001A00A71450 /* Build configuration list for PBXProject "PyCon CZ 2016" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC5BA50C1DAD001A00A71450;
+			productRefGroup = DC5BA5161DAD001A00A71450 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC5BA5141DAD001A00A71450 /* PyCon CZ 2016 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC5BA5131DAD001A00A71450 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5BA5231DAD001B00A71450 /* LaunchScreen.storyboard in Resources */,
+				DC7DF1B81DB562620045A483 /* Roboto-Light.ttf in Resources */,
+				DC7DF1B91DB562620045A483 /* Roboto-Medium.ttf in Resources */,
+				DC5BA5201DAD001B00A71450 /* Assets.xcassets in Resources */,
+				DC5BA51E1DAD001B00A71450 /* Main.storyboard in Resources */,
+				DC7DF1BB1DB562620045A483 /* Roboto-Thin.ttf in Resources */,
+				DCB8FC491DDA4A56004DB889 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6667FC84B87BDA29AF40096E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PyCon CZ 2016/Pods-PyCon CZ 2016-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6980DD9961738B22F4645D26 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PyCon CZ 2016/Pods-PyCon CZ 2016-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F06346E9224CC3A45F40A75 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC7DF1A41DB505A10045A483 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" e92588581e0a7ddea8c232bfe0fb3f2b41d06328 39e931eff39bcfb85d079869e7742422f75cc757cfbca5aa139bb2abc35348e5";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC5BA5111DAD001A00A71450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF841011DD7341D007AD042 /* Talk.swift in Sources */,
+				DC7DF1A61DB533F80045A483 /* TwitterViewController.swift in Sources */,
+				DCF841051DD740E3007AD042 /* Config.swift in Sources */,
+				DCF841031DD73A00007AD042 /* Room.swift in Sources */,
+				DC14AB3C1DB259AB0067BFC0 /* TalksViewController.swift in Sources */,
+				DCF3D2661DB10B7C00BBEA5F /* Model.swift in Sources */,
+				DC14AB3F1DB26AA00067BFC0 /* TalkCollectionViewCell.swift in Sources */,
+				DC8AF3FD1DB3CA430093D7D7 /* TalkDetailViewController.swift in Sources */,
+				DC5BA5191DAD001A00A71450 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC5BA51C1DAD001B00A71450 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5BA51D1DAD001B00A71450 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC5BA5211DAD001B00A71450 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5BA5221DAD001B00A71450 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC5BA5251DAD001B00A71450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC5BA5261DAD001B00A71450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC5BA5281DAD001B00A71450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B670946D7BE63FAA24C1381 /* Pods-PyCon CZ 2016.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = D3U95MADM7;
+				INFOPLIST_FILE = "PyCon CZ 2016/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.margetova.PyCon-PUNE-2017";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c948ed7e-03d3-4d1e-a912-9578b313b39b";
+				PROVISIONING_PROFILE_SPECIFIER = "PyCon PUNE";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		DC5BA5291DAD001B00A71450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2698DAA9BB4EFA79C3CF3F28 /* Pods-PyCon CZ 2016.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = D3U95MADM7;
+				INFOPLIST_FILE = "PyCon CZ 2016/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.margetova.PyCon-PUNE-2017";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c948ed7e-03d3-4d1e-a912-9578b313b39b";
+				PROVISIONING_PROFILE_SPECIFIER = "PyCon PUNE";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC5BA5101DAD001A00A71450 /* Build configuration list for PBXProject "PyCon CZ 2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5BA5251DAD001B00A71450 /* Debug */,
+				DC5BA5261DAD001B00A71450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5BA5271DAD001B00A71450 /* Build configuration list for PBXNativeTarget "PyCon CZ 2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5BA5281DAD001B00A71450 /* Debug */,
+				DC5BA5291DAD001B00A71450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC5BA50D1DAD001A00A71450 /* Project object */;
+}

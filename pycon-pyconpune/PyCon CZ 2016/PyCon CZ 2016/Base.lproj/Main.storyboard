@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DbS-j8-Zf8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Talks View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="TalksViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TalksViewController" customModule="PyCon_CZ_2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUQ-3u-sn3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="488"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="L13-rD-IXk">
+                                        <rect key="frame" x="20" y="27" width="335" height="29"/>
+                                        <segments>
+                                            <segment title="Main"/>
+                                            <segment title="Right"/>
+                                            <segment title=""/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="changeRoom:" destination="BYZ-38-t0r" eventType="valueChanged" id="vO7-cb-Ro0"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="L13-rD-IXk" firstAttribute="leading" secondItem="bUQ-3u-sn3" secondAttribute="leading" constant="20" id="28f-3I-yPA"/>
+                                    <constraint firstItem="L13-rD-IXk" firstAttribute="top" secondItem="bUQ-3u-sn3" secondAttribute="top" constant="27" id="dlR-7x-qwT"/>
+                                    <constraint firstAttribute="trailing" secondItem="L13-rD-IXk" secondAttribute="trailing" constant="20" id="xvp-QQ-1gG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bUQ-3u-sn3" secondAttribute="trailing" id="2A0-Ct-jNm"/>
+                            <constraint firstItem="bUQ-3u-sn3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4y1-Qb-xPY"/>
+                            <constraint firstItem="bUQ-3u-sn3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="T0y-B0-cOg"/>
+                            <constraint firstItem="bUQ-3u-sn3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Yss-eG-TRT"/>
+                            <constraint firstItem="bUQ-3u-sn3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="n4G-yN-bLl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bUQ-3u-sn3" secondAttribute="bottom" constant="486" id="nQA-G7-VPO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bUQ-3u-sn3" secondAttribute="bottom" constant="115" id="rog-dJ-xbJ"/>
+                            <constraint firstAttribute="trailing" secondItem="bUQ-3u-sn3" secondAttribute="trailing" id="vVO-qS-kLk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2A0-Ct-jNm"/>
+                                <exclude reference="4y1-Qb-xPY"/>
+                                <exclude reference="T0y-B0-cOg"/>
+                                <exclude reference="nQA-G7-VPO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="gLx-KK-bP2">
+                        <barButtonItem key="backBarButtonItem" id="aR0-mv-KcZ">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="twitter@1x" id="ELL-ow-viy">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="shareOnTwitter:" destination="BYZ-38-t0r" id="3Cv-HL-Zfr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="CPp-zp-bHF"/>
+                        <outlet property="segmentControl" destination="L13-rD-IXk" id="gt5-yM-0yR"/>
+                        <outlet property="segmentView" destination="bUQ-3u-sn3" id="59Z-T5-iL4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298" y="239"/>
+        </scene>
+        <!--Talk Detail View Controller-->
+        <scene sceneID="2La-gF-OlY">
+            <objects>
+                <viewController id="K0d-T0-c86" customClass="TalkDetailViewController" customModule="PyCon_CZ_2016" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yC0-8d-Fff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2415" y="239"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MvN-pe-Cac">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DbS-j8-Zf8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="knn-QV-Xsl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3TT-86-ESq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E4W-cY-aEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="239"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="twitter@1x" width="30" height="30"/>
+    </resources>
+</document>

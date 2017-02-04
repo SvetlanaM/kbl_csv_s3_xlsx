@@ -1,0 +1,6 @@
+framework module Pods_PyCon_CZ_2016 {
+  umbrella header "Pods-PyCon CZ 2016-umbrella.h"
+
+  export *
+  module * { export * }
+}
