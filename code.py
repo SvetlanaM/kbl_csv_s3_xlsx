@@ -16,7 +16,7 @@ if data["parameters"]["#S3key"] == '' or data["parameters"]["#S3secretKey"] == '
 
 if __name__ == '__main__':
     listOfFiles = glob.glob("./data/in/tables/*.csv")
-    print (listOfFiles)
+    print listOfFiles
     list_of_indexes = [[]]
     sheet_names = []
     for fileName in listOfFiles:
@@ -36,7 +36,7 @@ if __name__ == '__main__':
 
     conn = tinys3.Connection(data["parameters"]["#S3key"],data["parameters"]["#S3secretKey"])
     listOfFiles2 = glob.glob("./data/in/tables/*.xlsx")
-    print (listOfFiles2)
+    print listOfFiles2
     for file in listOfFiles2:
         temp = os.path.splitext(file[17:len(file)])
         if data["parameters"]["fileName"] == "":
